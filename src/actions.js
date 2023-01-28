@@ -1,6 +1,6 @@
 import { redirect } from "react-router-dom"
 
-const URL = "https://project-3-backend-cm7x.onrender.com"
+const URL = "https://road-trip-buddy-backend.onrender.com"
 
 // CREATE ACTION
 export const createAction = async ({ request }) => {

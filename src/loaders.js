@@ -1,4 +1,4 @@
-const URL = "https://project-3-backend-cm7x.onrender.com"
+const URL = "https://road-trip-buddy-backend.onrender.com"
 
 export const indexLoader = async () => {
   const response = await fetch(URL + "/places")
