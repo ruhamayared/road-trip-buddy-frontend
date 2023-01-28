@@ -82,5 +82,5 @@ Outlet -- "/places/delete/:id" --> deleteAction
 <!-- prettier-ignore-end -->
 
 ### Link to Project
-
-[Deployed Project Page](https://project-3-frontend-uxxk.onrender.com)
+[Backend Deployed Project Page](https://road-trip-buddy-backend.onrender.com)  
+[Frontend Deployed Project Page](https://heartfelt-dasik-3376da.netlify.app/)
