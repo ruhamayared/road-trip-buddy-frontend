@@ -45,7 +45,7 @@ export default function Footer() {
     <div className="footerContainer">
       {teamMembers.map((team, idx) => (
         <div className="teamContainer" key={idx}>
-          <img src={team.personImg} alt="shiloette of a person" />
+          <img className="teamImg" src={team.personImg} alt="shiloette of a person" />
           <div className="social">
             <a href={team.githubLink} target="_blank" rel="noopener noreferrer">
               <img src={team.githubImg} alt="placeholder" target="_blank" />

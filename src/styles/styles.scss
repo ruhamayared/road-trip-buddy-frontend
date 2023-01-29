@@ -10,12 +10,12 @@ $black: #333;
 
 
 *, *::before, *::after {
-    // instead of needing to do math everytime you add sizing, border-box, just includes the padding and border in an elemnet's total width and height
+    //Instead of needing to do math everytime you add sizing, border-box, just includes the padding and border in an elemnet's total width and height
     box-sizing: border-box;
 }
   
 * {
-    // makes everything 0 so that way it makes it easier to add padding properly.
+    //Makes everything 0 so that way it makes it easier to add padding properly.
     padding: 0;
     margin: 0; 
 }
@@ -41,37 +41,47 @@ body {
     font-size: 2rem;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    
+}
+
 .container h1 {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .index-background {
-    // takes it out of inline and doesnt effect the rest of the document flow
+    //Takes it out of inline and doesnt effect the rest of the document flow
     position: absolute;
 
-     // moves the image to the top
+     //Moves the image to the top
     top: 0;
 
-    // changes the z position to -1 so that way everything else is above it, making it an actual background image
+    //Changes the z position to -1 so that way everything else is above it, making it an actual background image
     z-index: -1;
 
-    // makes the background image 100% so it's full page
+    //Makes the background image 100% so it's full page
     width: 100%;
     height: 100%;
 
-    // Changes the image to fill the page
+    //Changes the image to fill the page
     object-fit: cover;
 
-    // relativily new but it changes the image brightness to half of what it originally is
+    //Relativily new but it changes the image brightness to half of what it originally is
     filter: brightness(80%);
     -webkit-filter: brightness(80%);
 }
 
 .App {
-    // for z-index to work you need to have some type of positioning, so adding position relative doesnt change much but allows us to use z-index
+    //For z-index to work you need to have some type of positioning, so adding position relative doesn't change much but allows us to use z-index
     position: relative;
 
-    // vh is view height. so we are using 100% of the view height
+    //vh is view height. so we are using 100% of the view height
     height: 100vh;
     z-index: 2;
     background-color: rgba($color: $black, $alpha: .7);
@@ -81,13 +91,15 @@ body {
         border-radius: 50px;
         margin: 5px;
         border: none;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
     input[type=submit]{
         background-color: #2194FE;
         color: white;
-        padding: 5px 10px;
+        padding: 10px 15px;
         cursor: pointer;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
         &:hover {
             background-color: #333;
@@ -117,7 +129,7 @@ body {
 }
 
 .header {
-    background-color: rgba($color: #131313, $alpha: .8);
+    background-color: rgba($color: #535353, $alpha: .75);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,7 +174,7 @@ body {
             overflow-y: scroll;
             list-style: none;
 
-            // fixed keeps it in the position regardless of scrolling
+            //Fixed keeps it in the position regardless of scrolling
             position: fixed;
             top: 6rem;
             background: $white;
@@ -171,15 +183,15 @@ body {
             height: 72vh;
             width: 0;
 
-            // max width means it's the max the width something will get
+            //Max width means it's the max the width something will get
             max-width: 400px;
 
-            // pushes the menu to the top z position allowing it to be in the most front
-            // the higher the z-index the more front something is
+            //Pushes the menu to the top z position allowing it to be in the most front
+            //The higher the z-index the more front something is
             z-index: 9;
             border-radius: 10px 0 0 10px;
 
-            // makes the slide out not instant and makes it smooth and nice looking
+            //Makes the slide out not instant and makes it smooth and nice looking
             transition: 1s ease-in-out;
             
         }
@@ -201,7 +213,7 @@ body {
             text-decoration: none;
             color: $black;
 
-            // transforms the text to all uppercase so we dont need to do it manually
+            //Transforms the text to all uppercase so we dont need to do it manually
             text-transform: uppercase;
             font-weight: bold;
         }
@@ -222,7 +234,7 @@ body {
             background: $white;
             right: 0;
             bottom: 0;
-            height: 120px;
+            height: 150px;
             width: 0;
             max-width: 600px;
             z-index: 9;
@@ -268,17 +280,22 @@ body {
 //////////////////
 
 .footerContainer {
-    background-color: $black;
+    background-color: rgba($color: #535353, $alpha: .75);
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: absolute;
     width: 100%;
     bottom: 0;
+   
     
     .teamContainer{
-        padding: 10px 30px;
+        padding: 0 30px;
     }
+
+    // .teamImg {
+    //     height: 40px;
+    // }
 
     .social {
         display: flex;
@@ -295,9 +312,9 @@ body {
     flex-direction: row;
     justify-content: space-between;
     font-size: 1rem;
-    margin: 10px;
-    padding: 2px;
-    background-color: #D9D9D9;
+    margin: 8px;
+    padding: 8px 0 4px 20px;
+    background-color: rgba($color: #ffffff, $alpha: .5);
     border-radius: 10px;
     box-shadow: 3px 4px 7px 0 rgba($color: $black, $alpha: .25);
     border: 1px solid #CFCFCF;

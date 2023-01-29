@@ -98,11 +98,13 @@ $black: #333;
         button {
             border-radius: 50px;
             border: none;
-            padding: 5px;
+            padding: 10px 15px;
             margin: 5px;
             
             background-color: #2194FE;
             color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.02em;
         }
 
         button:hover {

@@ -1,32 +1,24 @@
 import { Form, Link, useLoaderData } from "react-router-dom"
 import Mountain from "../components/img/mountain-trees.jpg"
 
-
 function Index(props) {
   const places = useLoaderData()
 
   return (
     <div>
+      <img className="index-background" src={Mountain} alt="mountain with trees and fog"></img>
+
       <div className="container">
-        <h1 className="index-h1" id="index-h1">Places to Visit</h1>
+        <h1 className="index-h1" id="index-h1">
+          Places to Visit
+        </h1>
         {places.map((place, idx) => (
           <div className="place" id="place" key={idx}>
             <Link to={`/${place._id}`}>
               <h1>{place.place}</h1>
             </Link>
-            {/* <div className="icons">
-              <Link to={`/${place._id}`}>
-                <img className="pen" src={Pen} alt="pen" />
-              </Link>
-              <Form action={`/delete/${place._id}`} method="post">
-                <button className={"trashCan"}>
-                  <img className="trashcan" src={Trashcan} alt="trashcan" />
-                </button>
-              </Form>
-            </div> */}
           </div>
         ))}
-        <img className="index-background" src={Mountain} alt="mountain with trees and fog"></img>
       </div>
 
       <div className="add">
