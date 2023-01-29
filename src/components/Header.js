@@ -67,7 +67,9 @@ export default function Header() {
 
   return (
     <div className="header">
-      <p className="cName">Road Trip Buddy</p>
+      <Link to={"/"} style={{ textDecoration: "none" }}>
+        <p className="cName">Road Trip Buddy</p>
+      </Link>
       <div className="navBar">
         {/* ---------- Create Toggle -----------  */}
         <button className="toggle-button" onClick={handleCreateToggle}>

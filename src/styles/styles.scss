@@ -33,12 +33,19 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.index-h1, .add {
+.index-h1 {
     padding: 20px;
 }
 
+.add {
+    padding: 20px;
+    font-size: 1.2em;
+    margin: auto;
+    width: 30%;
+}
+
 #index-h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .container {
@@ -95,7 +102,7 @@ body {
     }
 
     input[type=submit]{
-        background-color: #2194FE;
+        background-color: #45515c;
         color: white;
         padding: 10px 15px;
         cursor: pointer;
@@ -139,6 +146,7 @@ body {
         font-size: 2.2rem;
         color: $white;
         margin: 10px;
+        text-decoration: none;
     }
 
     .navBar {
